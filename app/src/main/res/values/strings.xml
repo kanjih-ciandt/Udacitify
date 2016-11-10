@@ -6,4 +6,24 @@
     <string name="title_activity_fullscreen">FullscreenActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="user">Kanji Hara</string>
+    <string name="user_email">hkanjih@gmail.com</string>
+
+
+    <string name="menu_listen_now">Listen Now</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_browse">Browse</string>
+
+    <string name="menu_social">You</string>
+    <string name="menu_download_only">Download Only</string>
+    <string name="menu_your_library">Your Library</string>
+    <string name="menu_settings">Settings</string>
+
 </resources>
