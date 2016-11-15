@@ -26,4 +26,23 @@
     <string name="menu_your_library">Your Library</string>
     <string name="menu_settings">Settings</string>
 
+    <string name="search_title">Search Music</string>
+    <string name="home">Home</string>
+
+
+    <string name="internal_list_just">Just For You</string>
+    <string name="internal_list_recently">Recently Played</string>
+    <string name="internal_list_inspired">Inspired By Your Recent Listening</string>
+
+    <string name="play_title">Now Playing</string>
+
+    <string name="disc_title_default">Name</string>
+    <string name="disc_follow_default">0 Followers</string>
+
+    <string name="disc_title_tim">Tim e Vanessa</string>
+    <string name="disc_follow_tim">150K Followers</string>
+
+    <string name="music_name">Music Pedro of Tim e Vanessa</string>
+
+
 </resources>
