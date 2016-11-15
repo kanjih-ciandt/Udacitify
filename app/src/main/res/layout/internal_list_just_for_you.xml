@@ -21,7 +21,8 @@
         android:fillViewport="true">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:id="@+id/internal_just_for_you_list">
             <include layout="@layout/disc_content_1"/>
             <include layout="@layout/disc_content"/>
             <include layout="@layout/disc_content"/>

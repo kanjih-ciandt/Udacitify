@@ -4,6 +4,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:bind="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent" android:layout_height="match_parent"
+
     android:orientation="vertical"
     android:layout_marginTop="@dimen/list_margin_top"
     android:layout_marginLeft="@dimen/list_margin_left"
@@ -24,7 +25,8 @@
         android:fillViewport="true">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:id="@+id/internal_inspired_list">
             <include layout="@layout/disc_content"/>
             <include layout="@layout/disc_content"/>
             <include layout="@layout/disc_content"/>

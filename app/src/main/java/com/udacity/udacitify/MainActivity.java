@@ -13,6 +13,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.ViewGroup;
+import android.widget.LinearLayout;
+
+import static android.R.attr.id;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -28,8 +32,7 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
+
                 Intent intent = new Intent(MainActivity.this, PlayActivity.class);
 
                 startActivity(intent);
@@ -44,6 +47,27 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        this.includeIntentPlay((ViewGroup) findViewById(R.id.internal_inspired_list));
+        this.includeIntentPlay((ViewGroup) findViewById(R.id.internal_just_for_you_list));
+        this.includeIntentPlay((ViewGroup) findViewById(R.id.internal_recently_played_list));
+
+
+    }
+
+    private void includeIntentPlay(ViewGroup viewGroup){
+        for(int index = 0; index<((ViewGroup)viewGroup).getChildCount(); ++index) {
+            View nextChild = ((ViewGroup)viewGroup).getChildAt(index);
+            nextChild.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(MainActivity.this, PlayActivity.class);
+
+                    startActivity(intent);
+                }
+            });
+        }
+
     }
 
     @Override
@@ -65,20 +89,7 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
 
-//        //noinspection SimplifiableIfStatement
-//        if (id == R.id.searchbox) {
-//            return true;
-//        }
-
-        return super.onOptionsItemSelected(item);
-    }
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
@@ -90,12 +101,6 @@ public class MainActivity extends AppCompatActivity
             Intent intent = new Intent(MainActivity.this, PlayActivity.class);
             startActivity(intent);
         } else if (id == R.id.nav_search) {
-
-        } else if (id == R.id.nav_browse) {
-
-        } else if (id == R.id.nav_download_only) {
-
-        } else if (id == R.id.nav_library) {
 
         } else if (id == R.id.nav_settings) {
 
