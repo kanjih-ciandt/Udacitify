@@ -30,7 +30,7 @@
                     android:text="@string/settings_volume_normalize"
                     style="@style/settings_option"/>
                 <TextView
-                   style="@style/settings_description"
+                    style="@style/settings_description"
                     android:text="@string/settings_volume_normalize_description"/>
             </LinearLayout>
             <Switch
@@ -49,8 +49,34 @@
             android:orientation="horizontal"
             android:layout_marginBottom="16dp">
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:text="@string/settings_volume_normalize"
+                    style="@style/settings_option"/>
+                <TextView
+                    style="@style/settings_description"
+                    android:text="@string/settings_volume_normalize_description"/>
+            </LinearLayout>
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/streaming_quality_type"
+                android:gravity="center" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
                 android:orientation="vertical"
                 >
                 <TextView
@@ -60,6 +86,30 @@
                 <TextView
                     style="@style/settings_description"
                     android:text="@string/settings_volume_normalize_description"/>
+            </LinearLayout>
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/download_quality_type"
+                android:gravity="center" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:text="@string/settings_download_mobile"
+                    style="@style/settings_option"/>
+                <TextView
+                    style="@style/settings_description"
+                    android:text="@string/settings_download_mobile_description"/>
             </LinearLayout>
             <Switch
                 android:layout_width="match_parent"

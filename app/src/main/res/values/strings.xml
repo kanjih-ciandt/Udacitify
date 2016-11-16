@@ -50,6 +50,29 @@
     <string name="settings_music_quality">Music Quality</string>
 
     <string name="settings_streaming">Streaming</string>
+    <string name="settings_streaming_description">Higher quality uses more data.</string>
+    <string name="settings_quality_automatic">Automatic Quality</string>
+    <string name="settings_quality_normal">Normal Quality</string>
+    <string name="settings_quality_high">High Quality</string>
+
+    <string name="settings_download">Download</string>
+    <string name="settings_download_description">Higher quality uses more disk space.</string>
+
+    <string-array name="streaming_quality_type">
+        <item>@string/settings_quality_automatic</item>
+        <item>@string/settings_quality_normal</item>
+        <item>@string/settings_quality_high</item>
+    </string-array>
+
+    <string-array name="download_quality_type">
+        <item>@string/settings_quality_normal</item>
+        <item>@string/settings_quality_high</item>
+    </string-array>
+
+
+    <string name="settings_download_mobile">Download using cellular</string>
+    <string name="settings_download_mobile_description">Recommended Setting:Off</string>
+
 
 
 
