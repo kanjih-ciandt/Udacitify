@@ -12,6 +12,12 @@
             android:title="@string/menu_search" />
 
         <item
+            android:id="@+id/nav_download_only"
+            android:icon="@drawable/ic_check_box_outline_blank_black_24dp"
+            android:checkable="false"
+            android:title="@string/menu_download_only" />
+
+        <item
             android:id="@+id/nav_settings"
             android:icon="@drawable/ic_settings_black_24dp"
             android:title="@string/menu_settings" />

@@ -18,5 +18,32 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="SearchEdit" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/accent</item>
+        <item name="colorControlActivated">@color/primary_dark</item>
+    </style>
+
+    <style name="settings_option">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/primary_dark</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        >
+    </style>
+
+    <style name="settings_description">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+
+    </style>
+
+    <style name="settings_switch">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+
+
 
 </resources>

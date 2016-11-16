@@ -1,6 +1,7 @@
 package com.udacity.udacitify;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -101,9 +102,25 @@ public class MainActivity extends AppCompatActivity
             Intent intent = new Intent(MainActivity.this, PlayActivity.class);
             startActivity(intent);
         } else if (id == R.id.nav_search) {
+            Intent intent = new Intent(MainActivity.this, SearchActivity.class);
+            startActivity(intent);
+
+        }else if (id == R.id.nav_download_only) {
+
+            if(item.isChecked()) {
+                item.setIcon(R.drawable.ic_check_box_outline_blank_black_24dp);
+            } else {
+                item.setIcon(R.drawable.ic_check_box_black_24dp);
+            }
+
+            item.setChecked(! item.isChecked());
+            return false;
+
+
 
         } else if (id == R.id.nav_settings) {
-
+            Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
+            startActivity(intent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

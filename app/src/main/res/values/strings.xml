@@ -44,5 +44,13 @@
 
     <string name="music_name">Music Pedro of Tim e Vanessa</string>
 
+    <string name="settings_volume_normalize">Normalize Volume</string>
+    <string name="settings_volume_normalize_description">Set the same volume level for all track</string>
+
+    <string name="settings_music_quality">Music Quality</string>
+
+    <string name="settings_streaming">Streaming</string>
+
+
 
 </resources>
