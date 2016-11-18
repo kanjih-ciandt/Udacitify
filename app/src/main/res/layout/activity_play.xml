@@ -11,6 +11,15 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.udacity.udacitify.PlayActivity"
     android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#FDD835"
+        android:text="SCREEN OF PLAYER SONG"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:paddingTop="10dp"
+        />
     <LinearLayout android:layout_height="0dp"
         android:layout_width="match_parent"
         android:layout_weight="2"

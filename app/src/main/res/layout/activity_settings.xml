@@ -14,6 +14,15 @@
     <LinearLayout android:layout_height="match_parent"
         android:layout_width="match_parent"
         android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#FDD835"
+            android:text="SCREEN OF SETTINGS MUSIC PLAYER"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:paddingTop="10dp"
+            />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -110,6 +119,28 @@
                 <TextView
                     style="@style/settings_description"
                     android:text="@string/settings_download_mobile_description"/>
+            </LinearLayout>
+            <Switch
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:text="@string/settings_payment"
+                    style="@style/settings_option"/>
+                <TextView
+                    style="@style/settings_description"
+                    android:text="@string/settings_payment_description"/>
             </LinearLayout>
             <Switch
                 android:layout_width="match_parent"

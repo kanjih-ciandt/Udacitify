@@ -21,6 +21,15 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#FDD835"
+                android:text="SCREEN OF LIST ALBUM/PLAYLIST"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:paddingTop="10dp"
+                />
             <include layout="@layout/internal_list_just_for_you"/>
             <include layout="@layout/internal_list_recently_played"/>
             <include layout="@layout/internal_list_inspired"/>

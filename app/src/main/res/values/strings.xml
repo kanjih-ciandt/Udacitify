@@ -58,6 +58,10 @@
     <string name="settings_download">Download</string>
     <string name="settings_download_description">Higher quality uses more disk space.</string>
 
+    <string name="settings_payment">Became a premium  ?</string>
+    <string name="settings_payment_description">Safe payment using Visa Checkout Api.</string>
+
+
     <string-array name="streaming_quality_type">
         <item>@string/settings_quality_automatic</item>
         <item>@string/settings_quality_normal</item>
